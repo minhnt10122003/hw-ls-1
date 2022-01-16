@@ -10,11 +10,12 @@ const users = [ {firstName : "Susan", lastName: "Steward"},
  {firstName : "Daniel", lastName: "Longbottom"},
  {firstName : "Jacob", lastName: "Black"} ]
 
- let usernames = users.map(obj => {
-     let userlist = []
-     userlist.push(`${obj.firstName} ${obj.lastName}`)
-     console.log(userlist)
+ let usernames = users.map(function(item){
+     
+     return(`${item.firstName} ${item.lastName}`)
+     
  })
+ console.log(usernames)
 
 //  Apply  filter() method to return all creatures with a habitat that is equal to Ocean:
 //   input: 
