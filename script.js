@@ -25,3 +25,19 @@ const users = [ {firstName : "Susan", lastName: "Steward"},
 // ];
 // output: [ {name: "Shark", habitat: "Ocean"}, {name: "Whale", habitat: "Ocean"} ]
 
+const creatures = [ {name: "Shark", habitat: "Ocean"},
+{name: "Whale", habitat: "Ocean"},
+{name: "Lion", habitat: "Savanna"},
+{name: "Monkey", habitat: "Jungle"}
+];
+const result = creatures.filter(item => item.habitat == "Ocean" )
+console.log(result)
+
+// Apply  filter() method o return all numbers that are greater than 7:
+
+// input:  [1, 3, 6, 8, 11]
+// output: [8, 11]
+
+input =  [1, 3, 6, 8, 11]
+const res = input.filter(number => number > 7 )
+console.log(res)
