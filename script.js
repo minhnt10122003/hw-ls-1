@@ -11,8 +11,8 @@ const users = [ {firstName : "Susan", lastName: "Steward"},
  {firstName : "Jacob", lastName: "Black"} ]
 
  let usernames = users.map(obj => {
-     let userlist = {}
-     userlist[obj.key] = `${obj.firstName} ${obj.lastName}`
+     let userlist = []
+     userlist.push(`${obj.firstName} ${obj.lastName}`)
      console.log(userlist)
  })
 
